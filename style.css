@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 1000px;
+    height: 1414px;
+    background-color: rgb(254, 251, 239);
+    border: 1px solid gray;
+}
+
+.atom {
+    --width: 8px;
+    width: var(--width);
+    height: var(--width);
+    border: 2px solid red;
+    border-radius: 50%;
+    transform: translate(calc(-1 * var(--width) / 2), calc(-1 * var(--width) / 2));
+    position: absolute;
+    background-color: white;
+}
+
+.atom:focus {
+    background-color: brown;
+}
+
+.bond {
+    height: 2px;
+    border-bottom: 2px dashed salmon;
+    position: absolute;
+}
